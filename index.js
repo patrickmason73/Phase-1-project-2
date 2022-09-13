@@ -24,8 +24,6 @@ fetch("https://api.jikan.moe/v4/anime")
             animeElement.innerText = `Anime Name: ${anime.name}`
             animeDiv.append(animeElement)
         });
-        heading.innerHTML = anime;
-        animeDiv.appendChild(heading);
     }
 
     const clearButton = document.getElementById('clear')
