@@ -10,13 +10,3 @@ h1 {
     color: #eee;
     margin-bottom: 30px;
 }
-#search {
-    position: relative;
-}
-
-#list:after {
-    content: '🔍';
-    position: absolute;
-    top: 7px;
-    right: 15px;
-}

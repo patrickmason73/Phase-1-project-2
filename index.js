@@ -32,7 +32,3 @@ fetch("https://api.jikan.moe/v4/anime")
             list.removeChild(list.firstChild)
         }
     }
-
-    clearButton.addEventListener("click", () => {
-        clearList()
-    } )   
