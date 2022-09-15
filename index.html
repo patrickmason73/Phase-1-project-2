@@ -3,29 +3,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A very okay website</title>
+    <title>Pat's Pokemon</title>
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
   </head>
   <body>
-    
   </div>
-  <div class="app">
-    <p>Try out the Anime Search API</p>
-    <div class="search">
-        <input autocomplete="off" id="search_query" type="text" name="query" placeholder="search for an anime, e.g Naruto">
-        <button id="search">Go</button>
-        <button id="clear">clear</button>
-    </div>
-    <div id="anime"></div>
-    <div class="debug">
-        Requesting: <a target="_blank" id="search_query_url" href="javascript:void(null)">API Request URL will appear here</a><br>
-    </div>
-    <div id="search_results" class="cards">
-    </div>
-</div>
-    <div class="results-container>
-       <ul class="results-list" id="list"></ul>
-    </div>
+    <div class="formtext">
+    
+    <p>SELECT A POKEMON</p>
+    <form>
+    <div class="select">
+      <button onclick="dropdownFunction()" class="dropbtn"> POKEMON</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="https://pokeapi.co/api/v2/pokemon/charizard">Charizard</a>
+        <a href="#about">Diglet</a>
+        <a href="#contact">Ninetails</a>
+        <a href="">Blastoise</a>
+      </div>
+  </form>
+
+ 
     </body>
 </html>

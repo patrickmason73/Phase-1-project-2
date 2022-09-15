@@ -1,9 +1,38 @@
 const init = () => {
-    document.addEventListener('DOMContentLoaded', init);
+    const inputForm = document.querySelector('form');
+  
+    inputForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+        console.log(event)
+    });
+  }
+  
+  document.addEventListener('DOMContentLoaded', init)
+  function dropdownFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+
+function chosenPokemon(event) {
+    event.preventDefault();
+    fetchPokemon(event)
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
 }
 
-
-fetch("https://api.jikan.moe/v4/anime")
+  function fetchPokemon(event){
+let pokemonSelect = document.querySelector("dropdown-content") 
+fetch(`https://pokeapi.co/api/v2/${pokemonSelect.value}`)
     .then((response) => {
         if (response.ok) {
             return response.json();
@@ -13,22 +42,13 @@ fetch("https://api.jikan.moe/v4/anime")
         })
     .then(data => {
         console.log(data); 
-        displaySearch(data);
+        displayPokemon(data);
         })
     .catch((error) => console.error("FETCH ERROR:", error));   
- 
-    function displaySearch(data) {
-        const animeDiv = document.getElementById("anime")
-        data.array.forEach(anime => {
-            const animeElement = document.createElement('p')
-            animeElement.innerText = `Anime Name: ${anime.name}`
-            animeDiv.append(animeElement)
-        });
     }
+function displayPokemon(data) {
+    
 
-    const clearButton = document.getElementById('clear')
-    function clearList(){
-        while (list.firstChild){
-            list.removeChild(list.firstChild)
-        }
-    }
+}
+//change project too hard, do genre drop box with options and attach anime suggestions to each option
+    
