@@ -52,3 +52,9 @@ h1 {
   .dropdown a:hover {background-color: #ddd;}
   
   .show {display: block;}
+
+#Blastoise {
+    color: black;
+    text-align: center;
+    background-color: aqua;
+}
