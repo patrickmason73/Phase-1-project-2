@@ -59,3 +59,7 @@ h1 {
   color: black;
   text-align: center;
 }
+.head {
+  position: relative;
+  padding: 30px 30px 30px 30px
+}

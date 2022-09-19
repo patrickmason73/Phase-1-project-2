@@ -39,13 +39,15 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${event.target.value}`)
   }
 
 function displayPokemon(data) {
-  data.data.forEach(element => {
-    document.appendChild(div)
-  });
-}
+    const head = document.createElement("h1")
+    const stat = document.getElementById("stat")
+    stat.appendChild(head)
+    document.body.style.backgroundImage = (`https://img.pokemondb.net/sprites/home/normal/2x/avif/${data.target}.avif`)
+  };
 
-document.createElement("div")
-const div = createElement
+
+
+const div = document.createElement("div")
 div.className = "class"
 
 
