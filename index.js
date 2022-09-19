@@ -5,6 +5,13 @@ const init = () => {
       event.preventDefault();
         console.log(event)
     });
+    var myDropdown = document.getElementById("myDropdown")
+console.log(myDropdown)
+myDropdown.addEventListener("change", (event) => 
+{console.log(event.target.value)
+  fetchPokemon(event);
+}
+)
   }
   
   document.addEventListener('DOMContentLoaded', init)
@@ -13,26 +20,10 @@ const init = () => {
   }
 
 //dropdown box function
-function chosenPokemon(event) {
-    event.preventDefault();
-    fetchPokemon(event)
-    window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
-          }
-        }
-      }
-}
 
-  function fetchPokemon(event){
-let pokemonSelect = document.getElementsByClassName("dropdown-content") 
-fetch(`https://pokeapi.co/api/v2/${classList.value}`)
+
+function fetchPokemon(event){
+fetch(`https://pokeapi.co/api/v2/pokemon/${event.target.value}`)
     .then((response) => {
         if (response.ok) {
             return response.json();
@@ -45,24 +36,30 @@ fetch(`https://pokeapi.co/api/v2/${classList.value}`)
         displayPokemon(data);
         })
     .catch((error) => console.error("FETCH ERROR:", error));   
-    }
+  }
+
 function displayPokemon(data) {
-data.data.forEach(element => {
-    
-});
-
+  data.data.forEach(element => {
+    document.appendChild(div)
+  });
 }
 
-const blastoise = document.getElementsByTagName('#blastoise')
-const diglet = document.getElementsByTagName('#diglet')
-const charizard = document.getElementsByTagName('#Charizard')
-const ninetails = document.getElementsByTagName('#Ninetails')
+document.createElement("div")
+const div = createElement
+div.className = "class"
 
-function pokemonStats() {
-    if (window.onclick = blastoise) {
-     console.log("Type: Water", "HP: 79", "Attack: 83", "Defense: 100")
-    }
-}
+
+
+
+
+// var blastoise = document.getElementById('blastoise')
+// var diglet = document.getElementById('#diglet')
+// var charizard = document.getElementByTagName('#Charizard')
+// var ninetails = document.getElementByTagName('#Ninetails')
+
+
+
+
 
 
 
