@@ -37,7 +37,7 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${event.target.value}`)
         })
     .catch((error) => console.error("FETCH ERROR:", error));   
   }
-
+ 
 function displayPokemon(data) {
     const head = document.createElement("h1")
     const stat = document.getElementById("stat")

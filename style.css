@@ -58,8 +58,14 @@ h1 {
 .class {
   color: black;
   text-align: center;
+  position: relative;
 }
-.head {
+.h1 {
+  display: block;
   position: relative;
   padding: 30px 30px 30px 30px
+}
+
+img {
+  display: block;
 }
