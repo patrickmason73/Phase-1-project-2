@@ -40,7 +40,7 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${event.target.value}`)
  
 function displayPokemon(data) {
     let stat = document.getElementById("stat")
-    stat.textContent = data
+    stat.textContent = JSON.stringify(data)
    
     
   };

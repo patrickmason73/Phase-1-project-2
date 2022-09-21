@@ -47,11 +47,11 @@ body {
   
   option:hover {background-color: #ddd;}
   
-  .display{
+  .display {
     color: black;
     text-align: center;
     position: relative;
-    display: contents;
+    text-size-adjust: -20%;
   }
   
   .show {display: block;}
