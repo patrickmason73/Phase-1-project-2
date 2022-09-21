@@ -41,7 +41,7 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${event.target.value}`)
 function displayPokemon(data) {
     let stat = document.getElementById("stat")
     stat.textContent = JSON.stringify(data)
-   
+    
     
   };
 
@@ -52,10 +52,7 @@ function displayPokemon(data) {
 
 
 
-// var blastoise = document.getElementById('blastoise')
-// var diglet = document.getElementById('#diglet')
-// var charizard = document.getElementByTagName('#Charizard')
-// var ninetails = document.getElementByTagName('#Ninetails')
+
 
 
 

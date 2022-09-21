@@ -51,7 +51,12 @@ body {
     color: black;
     text-align: center;
     position: relative;
-    text-size-adjust: -20%;
+    font-size: xx-small;
+  }
+
+  #ninetale {
+    object-position: left;
+    
   }
   
   .show {display: block;}
