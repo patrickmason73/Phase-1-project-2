@@ -41,15 +41,24 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${event.target.value}`)
 function displayPokemon(data) {
     let stat = document.getElementById("stat")
     let movesNameArr = []
-
-    data.stats.map((item) => {
-      movesNameArr.push(item.base_stat.name)
+    //let sprite = document.getElementById("sprite")
+    let ul = document.getElementById("list")
+    data.moves.forEach((item) => {
+      movesNameArr.push(item.move.name)
     })
-  
-    stat.textContent = JSON.stringify(movesNameArr)
+    movesNameArr.forEach((item) => {
+      let listElement = document.createElement('li')
+      listElement.textContent = item
+      ul.appendChild(listElement)
+    })
+    //data.sprites.forEach((item) => {
+      //let img = document.createElement('img')
+      //img.src = item.front_default
+      //sprite.appendChild(img)
+     // debugger
+    //})
     debugger
   };
-
 
 
 

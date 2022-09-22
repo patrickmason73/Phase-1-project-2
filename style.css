@@ -54,8 +54,13 @@ body {
   .display {
     color: black;
     text-align: center;
-    position: relative;
+    position: absolute;
     font-size: xx-small;
+    top: 15%;
+    left: 30%;
+    right: 30%;
+    display: inline-table
+    ;
   }
 
   #ninetale {
