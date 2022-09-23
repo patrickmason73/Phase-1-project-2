@@ -68,6 +68,11 @@ body {
     
   }
   
+  #sprite {
+    object-position: right;
+  }
+  
+  
   .show {display: block;}
 
 
