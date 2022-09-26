@@ -74,9 +74,9 @@ body {
   }
   
   img#newImg{
-    height: 350px;
-    width: 350px;
-    object-position: right;
+    height: 300px;
+    width: 300px;
+    right: 90%;
     image-rendering: optimizeQuality;
   }
 
