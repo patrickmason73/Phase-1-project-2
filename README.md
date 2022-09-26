@@ -6,7 +6,7 @@ Pat's pokemon is a webpage that allows the user to select a pokemon from a dropd
 
 ## Usage
 
-![Alt text](Desktop/Capture-1.png "Optional title")
+
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

@@ -42,7 +42,6 @@ function displayPokemon(data) {
     
     let stat = document.getElementById("stat")
     let movesNameArr = []
-    let sprite = document.getElementById("sprite")
     let toBeDeleted = document.getElementsByTagName("ul")
     let ul = document.createElement("ul")
     let toBeDeletedImg = document.getElementById("newImg")
