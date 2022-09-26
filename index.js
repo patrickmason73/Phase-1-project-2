@@ -19,7 +19,7 @@ myDropdown.addEventListener("change", (event) =>
     document.getElementById("myDropdown").classList.toggle("show");
   }
   
-//dropdown box function
+//dropdown box function^
 
 
 function fetchPokemon(event){
