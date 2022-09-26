@@ -7,6 +7,7 @@ body {
 
 .formtext {
   text-align: center;
+  top: 10%;
 }
 
 .dropbtn {
@@ -76,7 +77,9 @@ body {
     object-position: right;
     image-rendering: optimizeQuality;
   }
-  
+
+
+
   .show {display: block;}
 
 
