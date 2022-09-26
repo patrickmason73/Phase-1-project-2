@@ -2,21 +2,15 @@
 # Phase-1-project: Pat's Pokemon
 
 
-@@ -6,12 +6,29 @@ Pat's pokemon is a webpage that allows the user to select a pokemon from a dropd
+Pat's pokemon is a webpage that allows the user to select a pokemon from a dropd
 
 ## Usage
 
-![Alt text](Desktop/Capture-1.png "Optional title")
 ![Capture 1](https://user-images.githubusercontent.com/107088396/192360788-8853654d-9dec-481b-899c-393efbd2d197.PNG)
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Please make sure to update tests as appropriate.
 As you can see, the user selected Blastoise and the webpage fetched the data for blastoise and displayed the move list and sprite. If a user wanted to, with the way the HTML is set up, they can add any pokemon to the html list options and it will be added to the dropdown menu, and when selected, will display the correct information.
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
 ## HTML
 Within the HTML:
 
