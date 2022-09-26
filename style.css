@@ -63,13 +63,13 @@ body {
     ;
   }
 
-  #ninetale {
+  #ninetale img{
     object-position: left;
-    
+    size-adjust: small;
   }
   
   #sprite {
-    object-position: right;
+    
   }
   
   

@@ -18,7 +18,7 @@ myDropdown.addEventListener("change", (event) =>
   function dropdownFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
-
+  
 //dropdown box function
 
 
@@ -39,24 +39,39 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${event.target.value}`)
   }
  
 function displayPokemon(data) {
+    
     let stat = document.getElementById("stat")
     let movesNameArr = []
     let sprite = document.getElementById("sprite")
-    let ul = document.getElementById("list")
+    let toBeDeleted = document.getElementsByTagName("ul")
+    let ul = document.createElement("ul")
+    let toBeDeletedImg = document.getElementById("newImg")
+
+    if (toBeDeletedImg != null ) {
+      toBeDeletedImg.remove();
+    }
+    
+    while (toBeDeleted.length > 0) {
+      toBeDeleted[0].remove()
+    }
     data.moves.forEach((item) => {
       movesNameArr.push(item.move.name)
     })
     movesNameArr.forEach((item) => {
       let listElement = document.createElement('li')
       listElement.textContent = item
+      stat.appendChild(ul)
       ul.appendChild(listElement)
     })
-    data.sprites.forEach((item) => {
-      let img = document.createElement('img')
-      img.src = item
-      document.getElementById('body').appendChild(img)
-     debugger
-    })
+    
+    let img = document.createElement('img')
+    img.id = "newImg"
+    img.src = data.sprites.front_default
+    document.getElementById('body').appendChild(img) 
+    
+
+    
+    
     
   };
 
