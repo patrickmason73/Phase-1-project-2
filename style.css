@@ -80,7 +80,18 @@ body {
     image-rendering: optimizeQuality;
   }
 
-
+  img#shinyImg{
+    display: none;
+  }
+ div#shinyImg{
+  height: 300px;
+  width: 300px;
+  image-rendering: optimizeQuality;
+  
+ }
+ div#shinyFunction{
+  right: 10%;
+ }
 
   .show {display: block;}
 

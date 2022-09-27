@@ -3,7 +3,9 @@ const init = () => {
   
     inputForm.addEventListener('submit', (event) => {
       event.preventDefault();
-        console.log(event)
+        console.log(event);
+        
+        
     });
     var myDropdown = document.getElementById("myDropdown")
 console.log(myDropdown)
@@ -45,6 +47,11 @@ function displayPokemon(data) {
     let toBeDeleted = document.getElementsByTagName("ul")
     let ul = document.createElement("ul")
     let toBeDeletedImg = document.getElementById("newImg")
+    let toBeDeletedImg2 = document.getElementById("shinyImg")
+
+    if (toBeDeletedImg2 != null) {
+      toBeDeletedImg2.remove()
+    }
 
     if (toBeDeletedImg != null ) {
       toBeDeletedImg.remove();
@@ -67,12 +74,25 @@ function displayPokemon(data) {
     img.id = "newImg"
     img.src = data.sprites.front_default
     document.getElementById('body').appendChild(img) 
+
+    let img2 = document.createElement('img')
+      img2.id = "shinyImg"
+      img2.src = data.sprites.front_shiny
+    let shinyPic = document.getElementById("shinyPic")
+    let shinyFunction = document.getElementById("shinyFunction")
+    shinyPic.appendChild(img2)
+    shinyFunction.addEventListener("click", (data) => {
+      img2.style.display = "block"
+      img2.style.height = 300
+      img2.style.width = 300
+      })
+    
+  }
+  
+  
+  
     
 
-    
-    
-    
-  };
 
 
 
@@ -85,9 +105,4 @@ function displayPokemon(data) {
 
 
 
-
-
-
-
-//change project too hard, do genre drop box with options and attach anime suggestions to each option
 
