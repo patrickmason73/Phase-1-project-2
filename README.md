@@ -2,7 +2,7 @@
 # Phase-1-project: Pat's Pokemon
 
 
-Pat's pokemon is a webpage that allows the user to select a pokemon from a dropd
+Pat's pokemon is a webpage that allows the user to select a pokemon from a dropdown menu and it will display their stats as well as their original sprite(image). The user can also click the "SHINY" button to show the shiny version of the selected pokemon.
 
 ## Usage
 
