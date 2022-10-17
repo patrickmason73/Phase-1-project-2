@@ -7,7 +7,7 @@ const init = () => {
         
         
     });
-    var myDropdown = document.getElementById("myDropdown")
+    const myDropdown = document.getElementById("myDropdown")
 console.log(myDropdown)
 myDropdown.addEventListener("change", (event) => 
 {console.log(event.target.value)
@@ -21,7 +21,6 @@ myDropdown.addEventListener("change", (event) =>
     document.getElementById("myDropdown").classList.toggle("show");
   }
   
-//dropdown box function^
 
 
 function fetchPokemon(event){
