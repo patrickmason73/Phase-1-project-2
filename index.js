@@ -7,8 +7,9 @@ const init = () => {
         
         
     });
-    const myDropdown = document.getElementById("myDropdown")
+const myDropdown = document.getElementById("myDropdown")
 console.log(myDropdown)
+
 myDropdown.addEventListener("change", (event) => 
 {console.log(event.target.value)
   fetchPokemon(event);
