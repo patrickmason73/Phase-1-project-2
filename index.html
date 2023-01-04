@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pat's Pokemon</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    
   </head>
   <body id="body">
     
@@ -15,7 +15,7 @@
     </div>
     <form>
     <div class="select">
-      <button onclick="dropdownFunction()" class="dropbtn"> POKEMON</button>
+      <button  class="dropbtn"> POKEMON</button>
       <select name="Pokemon" id="myDropdown" class="dropdown-content"> 
         <option value="charizard">Charizard</option>
         <option value="diglett">Diglett</option>
@@ -30,6 +30,10 @@
         </select>
     </div>
       </form>
+              <form id="insertPokemon">
+                <label for="name" id="newPokemonLabel"> OR Search Pokemon Name!</label>
+                <input type="text" name="name" id="newPokemonName" >
+              </form>
       <form >
     <div class="display">
       <h1>
@@ -43,10 +47,13 @@
          <button type="button" id="shinyFunction">SHINY</button>
         </div>
         <div id="shinyPic" ></div>
+
+        
+        <script src="index.js"></script>
     </body>
     <div id="ninetale">
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png" alt="ninetale">
         </div>
-      
+        
     
 </html>

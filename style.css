@@ -35,7 +35,6 @@ body {
   }
   
   .dropdown-content {
-    display: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
@@ -95,5 +94,17 @@ body {
 
   .show {display: block;}
 
+#insertPokemon{
+  position: relative;
+  left: 50%;
+  top: 20%;
+}
 
+#stat{
+  list-style-image: url(https://upload.wikimedia.org/wikipedia/commons/5/53/Pok%C3%A9_Ball_icon.svg);
+  list-style-position: outside
+}
 
+#newPokemonLabel{
+  font-weight: bold;
+}
