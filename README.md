@@ -2,29 +2,39 @@
 # Phase-1-project: Pat's Pokemon
 
 
-Pat's pokemon is a webpage that allows the user to select a pokemon from a dropdown menu and it will display their stats as well as their original sprite(image). The user can also click the "SHINY" button to show the shiny version of the selected pokemon.
+Pat's pokemon is a webpage that allows the user to select a pokemon from a dropdown menu and it will display their moves as well as their original sprite(image). The user can also click the "SHINY" button to show the shiny version of the selected pokemon. If the pokemon the user is searching for is not in the dropdown, they can seach for the pokemon name in the search box on the right.
+
+
 
 ## Usage
 
-![Capture 1](https://user-images.githubusercontent.com/107088396/192360788-8853654d-9dec-481b-899c-393efbd2d197.PNG)
+![evee cap](https://user-images.githubusercontent.com/107088396/210707234-0f587432-bc8c-4fcc-a56c-6f38113cfb6b.PNG)
 
 
-As you can see, the user selected Blastoise and the webpage fetched the data for blastoise and displayed the move list and sprite. If a user wanted to, with the way the HTML is set up, they can add any pokemon to the html list options and it will be added to the dropdown menu, and when selected, will display the correct information.
+As you can see, the user selected Eevee and the webpage fetched the data for Eevee and displayed the move list + sprite in the DOM. 
+
+
+![charmander cap](https://user-images.githubusercontent.com/107088396/210707505-a81d1bd3-b82f-48c6-a55f-5982002a7ede.PNG)
+
+Here the user searched for a pokemon not listed in the dropdown menu, the pokemon moves and sprite were brought up, if the user were to spell it wrong, a message will pop up telling them to check their spelling. They also clicked the shiny button above the original sprite.
+
 
 ## HTML
 Within the HTML:
 
-![cap 2](https://user-images.githubusercontent.com/107088396/192361908-192adc99-a928-4101-b394-b6dec3e16694.PNG)
+![html piccc](https://user-images.githubusercontent.com/107088396/210708783-1e7492f0-4bb9-48b9-996c-a1ff0f974683.PNG)
 
-Anyone can add a pokemon as long as the name is spelled correctly and has existed within the show or the games. The javascript will fetch the correct data for that pokemon by insterting the pokemon name into our API link.
+
+Here is what the dropdown and search bar HTML look like, nothing too compliacted going on. I found forms easy to work with for this app.
 
 ## JavaScript
 Within JS:
 
-![cap 3](https://user-images.githubusercontent.com/107088396/192362637-9bdde122-bf5a-4f75-817e-babaef3438c5.PNG)
+![Captureeeee lolll](https://user-images.githubusercontent.com/107088396/210709153-9c503a92-d615-4a82-8485-0dfcf75278ac.PNG)
 
 
-If I wanted to add any of the other stats/attributes of the pokemon to display on the webpage, all I would have to do is create a similar ForEach() function and make a new array for that data, then it will iterate over the array of data and return what we are looking for. Throwing a debugger in will allow you to see what all the data we have by typing "data." within the console. The debugger is very useful for finding what data we have access to and can manipulate.
+
+Here is the function for the search bar, it is called on an event listener on the form. This function within the fetch is the same that is used for the dropdown menu but in callback form with very minor differences. But basically the function fetches the data from the api then appends it to different specified areas of the DOM.
 
 
 ## Acknowledgement
