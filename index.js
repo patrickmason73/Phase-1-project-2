@@ -54,6 +54,9 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${event.target.value}`)
 
 function postPokemon(event) {
   event.preventDefault()
+    if(insertPokemon.errorMsg != null) {
+      errorMsg.remove()
+    }
 let newPokemonName = document.getElementById('newPokemonName')
 let newData = newPokemonName.value
   fetch(`https://pokeapi.co/api/v2/pokemon/${newData}`)
@@ -65,6 +68,7 @@ let newData = newPokemonName.value
     let ul = document.createElement("ul")
     let toBeDeletedImg = document.getElementById("newImg")
     let toBeDeletedImg2 = document.getElementById("shinyImg")
+    
 
     if (toBeDeletedImg2 != null) {
       toBeDeletedImg2.remove()
@@ -104,7 +108,14 @@ let newData = newPokemonName.value
       img2.style.width = 300
       })
     
-  })}
+  })
+  .catch((error) => {
+    let errorMsg = document.createElement('p')
+    errorMsg.textContent = "check your spelling ☺"
+    insertPokemon.append(errorMsg)
+    console.log(error)
+  })
+}
 
 const insertPokemon = document.getElementById('insertPokemon')
 insertPokemon.addEventListener('submit', postPokemon)
